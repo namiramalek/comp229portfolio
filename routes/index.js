@@ -44,12 +44,6 @@ router.get('/response', function(req, res, next) {
 
 
 
-/* Get  resume */
-router.get('/resume', function(req, res, next){
-var data=fs.readFileSync('./public/Assets/Namira_resume.pdf');
-res.contentType("application/pdf");
-res.send(data);
-});
 
 
 
