@@ -9,24 +9,46 @@
     <h1>Contact me</h1><br>
 </div>
 
-<div class="row" >
-    <div class="column" >
-       
-            <div class="jumbotron" style="height:400px; ;width: 500px;" >
-                <h4>Mail me:</h4>
+
+<p>
+    you can send me an email via:
+    
+     <a href = "mailto: namiramalek234@gmail.com">namiramalek234@gmail.com </a>
+</p>
+<!-- Form Submision -->
+<form  action="/response" method="GET" >
+<div class="form-group" >
+    <label for="exampleFormControlInput1">Email address</label>
+    <input type="email" class="form-control" id="exampleFormControlInput1"
+     placeholder="name@example.com">
+
+
+<div class="row">
+        <div class="col-md-6 mb-6 mb-lg-6">
+            <div class="form-group">
+                <label for="exampleFormControlInput1">First Name </label>
+                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="First Name">
             </div>
-         
-    </div>        
-        
-    <div class="column" >
-     
-            <div class="container" style="margin-left: 30%;" >
-           
+        </div>
+        <div class="col-md-6 mb-6 mb-lg-6">
+            <div class="form-group">
+                <label for="exampleFormControlInput1">Last Name</label>
+                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Last Name">
             </div>
-        
-    </div>
+        </div>
+        </div>
+<div>
 </div>
 
+<div class="form-group">
+    <label for="exampleFormControlTextarea1">Your Message</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="4"></textarea>
+</div>
+<button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+</div>
+</div>
 
 
 <%include partials/bottom_nav.ejs %>
