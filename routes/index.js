@@ -36,11 +36,6 @@ router.get('/ContactMe', function(req, res, next) {
 });
 
 
-/* Get  response for contact submission */
-router.get('/home', function(req, res, next) {
-  res.render('Home', { title: 'Back to Home Screen' });
-
-});
 
 
 
