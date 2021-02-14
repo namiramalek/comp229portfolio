@@ -37,8 +37,8 @@ router.get('/ContactMe', function(req, res, next) {
 
 
 /* Get  response for contact submission */
-router.get('/response', function(req, res, next) {
-  res.render('Response', { title: 'Thank you page' });
+router.get('/home', function(req, res, next) {
+  res.render('Home', { title: 'Back to Home Screen' });
 
 });
 
