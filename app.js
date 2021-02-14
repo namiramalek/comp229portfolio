@@ -1,5 +1,7 @@
-/* COMP229,Namirabanu Malek,301178112,10 feb 2021 */
-var createError = require('http-errors');
+/* Student name : Namirabanu Malek,
+student id : 301178112,
+Subject :COMP229-web application development
+Date : 10 feb 2021 */var createError = require('http-errors');
 var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');

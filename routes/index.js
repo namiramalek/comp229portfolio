@@ -1,4 +1,7 @@
-/* COMP229,Namirabanu Malek,301178112,10 feb 2021 */
+/* Student name : Namirabanu Malek,
+student id : 301178112,
+Subject :COMP229-web application development
+Date : 10 feb 2021 */
 var express = require('express');
 var router = express.Router();
 
