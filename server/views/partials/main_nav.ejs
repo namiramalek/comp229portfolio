@@ -51,6 +51,15 @@ Date : 10 feb 2021 -->
         </li>
         
         
+        <% if (title == "Business Contact List"){ %>
+          <li class="nav-item active">
+       <% } else {%>
+        <li class="nav-item ">
+         <% } %>
+          <a class="nav-link" href="/business-contact-list" ><i class="fas fa-address-book"></i>Business Contact List </a>
+        </li>
+
+
         <% if (title == "ContactMe"){ %>
           <li class="nav-item active">
        <% } else {%>
@@ -59,8 +68,22 @@ Date : 10 feb 2021 -->
           <a class="nav-link" href="/ContactMe"><i class="fas fa-phone"></i>Contact Me </a>
         </li>
       
-       
 
+      <% if(typeof displayName == 'string' && displayName) { %>
+        <li class="navbar-text"><i class="fas fa-lg fa-user"></i>Welcome,<%= displayName %></li>
+        <li class="nav-item">
+          <a href="/logout" class="nav-link">
+            <i class="fas fa-lg fa-sign-out-alt"></i>Logout</a></li>
+    <%  }else{ %>
+        <li class="nav-item">
+          <a href="/login" class="nav-link">
+            <i class="fas fa-lg fa-sign-in-alt"></i>Login</a></li>
+
+      <% } %>
+
+      
+       
+        </ul>
     </div>
   </nav>
 
