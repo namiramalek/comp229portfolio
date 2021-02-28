@@ -14,7 +14,7 @@ if(err)
 else {
     res.render('businessContact/list',{title: 'Business Contact List',BusinessContactList: bcontactList, displayName: req.user ? req.user.displayName: ''})
 }
- });
+ }).sort({Contact_name:1});
 }
 
 module.exports.displayAddPage= (req,res,next)=>{
